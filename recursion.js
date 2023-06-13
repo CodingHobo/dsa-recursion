@@ -60,11 +60,20 @@ function revString(str) {
 
 /** findIndex: return the index of val in arr (or -1 if val is not present). */
 
-function findIndex(arr, val) {}
+function findIndex(arr, val, i=0) {
+  if (i > arr.length) return -1;
+
+  if (arr[i] === val) {
+    return i;
+  }
+ return findIndex(arr, val, ++i);
+}
 
 /** gatherStrings: given an object, return an array of all of the string values. */
 
-function gatherStrings(obj) {}
+function gatherStrings(obj) {
+  
+}
 
 // FURTHER STUDY
 

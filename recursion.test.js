@@ -64,19 +64,19 @@ describe("isPalindrome", function() {
   });
 });
 
-// describe("findIndex", function() {
-//   let animals = ["duck", "cat", "cat", "pony"];
+describe("findIndex", function() {
+  let animals = ["duck", "cat", "cat", "pony"];
 
-//   it("returns the first index of the value in the array if the value exists", function() {
-//     expect(findIndex(animals, "duck")).toBe(0);
-//     expect(findIndex(animals, "cat")).toBe(1);
-//     expect(findIndex(animals, "pony")).toBe(3);
-//   });
+  it("returns the first index of the value in the array if the value exists", function() {
+    expect(findIndex(animals, "duck")).toBe(0);
+    expect(findIndex(animals, "cat")).toBe(1);
+    expect(findIndex(animals, "pony")).toBe(3);
+  });
 
-//   it("returns -1 if the value does not exist", function() {
-//     expect(findIndex(animals, "porcupine")).toBe(-1);
-//   });
-// });
+  it("returns -1 if the value does not exist", function() {
+    expect(findIndex(animals, "porcupine")).toBe(-1);
+  });
+});
 
 describe("revString", function() {
   it("returns a reversed copy of the string", function() {
