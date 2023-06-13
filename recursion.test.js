@@ -27,42 +27,42 @@ describe("longest", function() {
   });
 });
 
-// describe("everyOther", function() {
-//   it("returns a string with every other character in the input", function() {
-//     expect(everyOther("")).toBe("");
-//     expect(everyOther("h")).toBe("h");
-//     expect(everyOther("hello")).toBe("hlo");
-//   });
-// });
+describe("everyOther", function() {
+  it("returns a string with every other character in the input", function() {
+    expect(everyOther("")).toBe("");
+    expect(everyOther("h")).toBe("h");
+    expect(everyOther("hello")).toBe("hlo");
+  });
+});
 
-// describe("find", function() {
-//   let animals = ["duck", "cat", "pony"];
+describe("find", function() {
+  let animals = ["duck", "cat", "pony"];
 
-//   it("returns true if the value exists", function() {
-//     expect(find(animals, "duck")).toBe(true);
-//     expect(find(animals, "cat")).toBe(true);
-//     expect(find(animals, "pony")).toBe(true);
-//   });
+  it("returns true if the value exists", function() {
+    expect(find(animals, "duck")).toBe(true);
+    expect(find(animals, "cat")).toBe(true);
+    expect(find(animals, "pony")).toBe(true);
+  });
 
-//   it("returns false if value does not exist", function() {
-//     expect(find(animals, "porcupine")).toBe(false);
-//   });
-// });
+  it("returns false if value does not exist", function() {
+    expect(find(animals, "porcupine")).toBe(false);
+  });
+});
 
-// describe("isPalindrome", function() {
-//   it("returns true if the string is a palindrome", function() {
-//     expect(isPalindrome("")).toBe(true);
-//     expect(isPalindrome("x")).toBe(true);
-//     expect(isPalindrome("noon")).toBe(true);
-//     expect(isPalindrome("tacocat")).toBe(true);
+describe("isPalindrome", function() {
+  it("returns true if the string is a palindrome", function() {
+    expect(isPalindrome("")).toBe(true);
+    expect(isPalindrome("x")).toBe(true);
+    expect(isPalindrome("noon")).toBe(true);
+    expect(isPalindrome("tacocat")).toBe(true);
 
-//   });
+  });
 
-//   it("returns false if the string is not a palindrome", function() {
-//     expect(isPalindrome("az")).toBe(false);
-//     expect(isPalindrome("tacodog")).toBe(false);
-//   });
-// });
+  it("returns false if the string is not a palindrome", function() {
+    expect(isPalindrome("az")).toBe(false);
+    expect(isPalindrome("tacodog")).toBe(false);
+  });
+});
 
 // describe("findIndex", function() {
 //   let animals = ["duck", "cat", "cat", "pony"];
@@ -78,14 +78,14 @@ describe("longest", function() {
 //   });
 // });
 
-// describe("revString", function() {
-//   it("returns a reversed copy of the string", function() {
-//     expect(revString("")).toBe("");
-//     expect(revString("x")).toBe("x");
-//     expect(revString("cat")).toBe("tac");
-//     expect(revString("duck")).toBe("kcud");
-//   });
-// });
+describe("revString", function() {
+  it("returns a reversed copy of the string", function() {
+    expect(revString("")).toBe("");
+    expect(revString("x")).toBe("x");
+    expect(revString("cat")).toBe("tac");
+    expect(revString("duck")).toBe("kcud");
+  });
+});
 
 // describe("gatherStrings", function() {
 //   it("gathers all object string values into an array", function() {
