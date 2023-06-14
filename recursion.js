@@ -96,7 +96,41 @@ function gatherStrings(obj) {
 /** binarySearch: given a sorted array of numbers, and a value,
  * return true if val is in array, false if not present). */
 
-function binarySearch(arr, val) {}
+function binarySearch(arr, val, start=0, end=arr.length) {
+  if(start > end) return false;
+
+  let middle = Math.floor((start + end)/2)
+
+  if(arr[middle] === val) return true;
+
+  if(arr[middle] < val){
+    return binarySearch(arr, val, start = middle + 1, end)
+  } else {
+    return binarySearch(arr, val, start, end = middle - 1)
+  }
+}
+
+// function binarySearchNormal(arr, val){
+//   let start = 0;
+//   let end = arr.length;
+
+
+//   while(start <= end){
+//     let middle = Math.floor((start + end)/2)
+//     if(arr[middle] === val) return true;
+
+//     if(arr[middle] < val){
+//       start = middle + 1
+//     } else {
+//       end = middle - 1
+//     }
+//   }
+
+//   return false;
+// }
+//5
+
+// [1,2,3,4,5,6]
 
 /** binarySearch: given a sorted array of numbers, and a value,
  * return the index of that value (or -1 if val is not present). */
